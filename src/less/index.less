@@ -1,64 +1,10 @@
-@color:#fff;
-
-*{
-    margin:0px;
-    padding:0px;
-    list-style: none;
-}
-
-@colorWhite:#fff;
-@colorBlue:#00a8ff;
+//引入页头样式
+ 
+@import url("header.less");
 
 
-//辅助导航
-.navbar{
-    border-radius:0px;
-    margin-bottom:0px;
-}
-.navbar-inverse{
-    .navbar-brand{
-        color: @colorWhite;
-        font-size: 26px;
-        
-        span{
-            font-size: 18px;
-            margin-right: 10px;
-        }
-    }
-    
-    .navbar-nav{
-        &>li{
-            &>a{
-                color:@colorWhite;
-                
-                &:hover{
-                    color: @colorBlue;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
 
-//主导航
-.navbar-default{
-
-    .navbar-nav{
-        &>li{
-            &>a{
-                line-height: 40px;
-                min-width: 80px;
-                font-size: 16px;
-                text-align: center;
-                
-                &:hover{
-                    background-color: #f0f0f0;
-                }
-            }
-        }
-    }
-}
-
+//@import url("header.less");
 //三大理财介绍
 #feature{
     margin-top: 20px;
@@ -91,8 +37,14 @@
     padding-left: 0px;
 }
 
+
 #invest{
     table{
+        @media all and (max-width:620px){
+            .no{
+                display: none;
+            }
+        }
         th{
             height: 50px; 
             line-height: 32px;
@@ -150,25 +102,4 @@
 
 
 //页脚
-footer{
-    background:#f2f2f2;
-    padding-top:40px;    
-       & ul:first-child{
-           
-           & li{
-               line-height: 36px;
-           }
-           
-        }
-        
-       & ul:last-child{
-           & li:nth-of-type(2){
-               margin-top:20px;
-               
-               img{
-                   width:160px;
-                   height:160px;
-               }
-           }
-       } 
-}
+@import url("footer.less");
