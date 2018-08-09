@@ -34,6 +34,18 @@
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #f0f0f0;
 }
+.in {
+  display: block;
+}
+.none {
+  display: none;
+}
+.in {
+  display: block;
+}
+.none {
+  display: none;
+}
 #person {
   margin-top: 5px;
 }
@@ -62,6 +74,9 @@
 }
 #person #leftBox .list-group li {
   line-height: 26px;
+}
+#person {
+  margin-top: 5px;
 }
 #person #right .el-account-info {
   text-align: left;

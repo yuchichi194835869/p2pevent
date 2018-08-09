@@ -17,98 +17,11 @@
 		<div id="person" class="container">
 			<div class="row">
 
-				<!--左边栏-->
-				<div id="leftBox" class="col-lg-3 col-md-2 col-sm-12 ">
-					<div >
-						<ul id="menu" class="list-group">
-							<li class="list-group-item ${pageScope.currentMenu=='bid' ? 'active' :'' }">
-								<a href="#" class="aaa">
-									<span>投资项目</span>
-								</a>
-							</li>
-
-							<li class="list-group-item">
-
-								<a href="#" class="aaa">
-									<span>借款项目</span>
-								</a>
-
-								<ul>
-									<li>
-										<a href="#">
-											<span>借款项目</span>
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											<span>还款明细</span>
-										</a>
-									</li>
-								</ul>
-							</li>
-
-							<li class="list-group-item">
-								<a href="#" class="aaa">
-									<span class="text-title">我的账户</span>
-								</a>
-								<ul class="in">
-									<li class="active">
-										<a href="#">
-											账户信息
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											实名认证
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											银行卡管理
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											登录记录
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item">
-								<a href="#" class="aaa">
-									<span>资产详情</span>
-								</a>
-								<ul class="in">
-									<li>
-										<a href="#">
-											账户流水
-										</a>
-									</li>
-									<li>
-										<a href="#">
-											充值明细
-										</a>
-									</li>
-									<li>
-										<a>
-											提现记录
-										</a>
-									</li>
-									<li>
-										<a>
-											收款明细
-										</a>
-									</li>
-								</ul>
-							</li>
-							<li class="list-group-item">
-								<a href="#" class="aaa">
-									<span>个人资料</span>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+				<!--引入左边栏html结构-->
+				<?php
+					include_once("./left.html")
+				?>
+			</div>
 				<!--右边内容-->
 				<div id="rightBox" class="col-lg-9 col-md-10 col-sm-12">
 					<div id="loginReg">
@@ -169,6 +82,9 @@ include_once("./footer.html")
 		?>
 		<!--引入jquery-->
 		<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="src/javascripts/personal.js" type="text/javascript" charset="utf-8"></script>
+		
 		<!--引入bootstrap  js文件-->
 		<script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 		<!--自定义文件  副导航提示框-->
